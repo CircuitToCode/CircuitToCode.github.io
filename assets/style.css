@@ -122,3 +122,55 @@ body{background:#0a1220;color:#eaf1fb}
 .github-event{padding:10px 0}.github-event-icon{border-color:#0d789d;color:#16c0ec}.github-panel-head a{color:#14bce8}
 @media(max-width:800px){.site-header{padding:0 20px}.hybrid-hero{grid-template-columns:1fr;padding:50px 7vw 25px}.portrait-stage{height:360px;max-width:450px;margin:0 auto}.skill-visual-grid{grid-template-columns:repeat(2,1fr)}.github-panel{margin:20px auto 0}}
 @media(max-width:560px){.nav{gap:12px}.hybrid-hero .hero-name{font-size:clamp(65px,16vw,92px)}.hybrid-hero .hero-role{font-size:18px}.portrait-stage{height:310px}.portrait-stamp{font-size:16px}.skill-visual-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* Screenshot-matched CircuitToCode home layout */
+body{background:#061522}
+.site-header{height:68px;background:#f4f8fc;padding:0 max(3vw,calc((100vw - 1550px)/2));}
+.brand-mark{font-size:0;position:relative}.brand-mark:after{content:"▣";font-size:25px}
+.nav{font-size:14px;color:#10243a}
+.hybrid-hero{min-height:470px;height:470px;padding:25px max(5vw,calc((100vw - 1370px)/2)) 12px;grid-template-columns:1fr .98fr;gap:0;background:radial-gradient(ellipse at 80% 52%,#b9e3ff 0,transparent 38%),linear-gradient(110deg,#f8fbff,#eaf3fc 70%,#d9eafa);position:relative}
+.hybrid-hero .hero-copy{padding-top:8px}.hybrid-hero .hero-name{font-size:clamp(76px,7vw,112px);margin:10px 0 12px;letter-spacing:-.075em}
+.hybrid-hero .hero-role{font-size:clamp(20px,2.1vw,29px);max-width:510px}
+.hybrid-hero .hero-text{font-size:17px;max-width:500px}.hybrid-hero .hero-meta{display:none}
+.portrait-stage{height:450px;align-self:end;margin:0 auto;width:100%;max-width:600px}
+.portrait-frame{width:min(82%,430px);height:100%;}.portrait-photo{object-position:center 18%;mix-blend-mode:multiply}
+.portrait-stamp{right:0;top:36%;font-size:20px}
+.reference-dashboard{background:#061522;color:#f2f7ff;padding:24px max(3vw,calc((100vw - 1550px)/2)) 38px;position:relative;overflow:hidden;background-image:radial-gradient(ellipse at 30% 0%,#0b3451 0,transparent 55%),linear-gradient(180deg,#061a2a,#04111e)}
+.reference-dashboard:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.24;background:repeating-linear-gradient(0deg,transparent 0 68px,#087eaa 69px,#087eaa 70px,transparent 71px),repeating-linear-gradient(90deg,transparent 0 155px,#087eaa 156px,#087eaa 157px,transparent 158px);mask-image:linear-gradient(180deg,#000,transparent 90%)}
+.reference-top,.reference-projects{position:relative;z-index:1}
+.reference-top{display:grid;grid-template-columns:1fr 470px;gap:32px;align-items:start;max-width:1500px;margin:auto}
+.reference-skills{text-align:center;padding:0 0 14px}
+.reference-kicker{font-size:12px;letter-spacing:4px;color:#b9d3e8;font-weight:700;margin:0 0 2px}
+.reference-skills h2{font:600 31px var(--display);margin:0 0 16px;color:#f4f8ff}
+.reference-skills h2 span{color:#12b8ed}
+.tech-icons{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:10px;align-items:start}
+.tech-item{display:flex;align-items:center;flex-direction:column;gap:8px;font-size:14px;line-height:1.25;text-align:center;color:#f4f7fc}
+.tech-icon{width:74px;height:74px;border:1px solid #12628a;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#0b2c43,#061522 70%);box-shadow:inset 0 0 15px #0caee51a;color:#11c3f2;font:700 27px var(--display);transition:.25s}
+.tech-item:hover .tech-icon{border-color:#13c9f4;box-shadow:0 0 20px #00bff255;transform:translateY(-4px)}
+.tech-icon.cpp{font-size:32px;color:#fff;text-shadow:2px 2px #1475db}.tech-icon.cpp span{font-size:14px}.tech-icon.python{color:#ffd44d;text-shadow:2px 2px #2272b9}.tech-icon.stm{color:#05c7f1}.tech-icon.esp{font-size:20px;color:#f1f7ff}.tech-icon.kicad{font-size:32px;color:#ffcf36}.tech-icon.linux{font-size:37px}.tech-icon.gitlab{color:#ff7139;font-size:36px}.tech-icon.can{font-size:32px}
+.reference-github{border:1px solid #11658b;border-radius:23px;padding:15px 18px 10px;background:linear-gradient(145deg,#091e30,#071726);box-shadow:0 0 25px #05b9f32a;min-height:218px}
+.reference-github-head{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:15px;font-weight:700;margin-bottom:10px}
+.reference-github-head>span{display:flex;align-items:center;gap:9px}.reference-github-head a,.contribution-caption a{font-size:11px;color:#11c6f2;text-decoration:underline}
+.gh-mark{display:inline-grid;place-items:center;width:28px;height:28px;background:#f2f7ff;color:#071726;border-radius:50%;font-size:15px}
+.reference-github .github-activity{display:block;max-height:102px;overflow:hidden}
+.reference-github .github-event{display:grid;grid-template-columns:22px 1fr auto;gap:8px;align-items:center;padding:5px 0;border:0;font-size:11px}
+.reference-github .github-event-icon{width:13px;height:13px;font-size:8px}.reference-github .github-event-copy strong{font-size:11px;font-weight:500;color:#f0f6fc}.reference-github .github-event-copy small{display:none}.reference-github .github-event time{font-size:10px;color:#c4d5e4}
+.reference-github .github-empty{font-size:11px;color:#b7cad8}
+.contribution-grid{display:grid;grid-template-columns:repeat(26,1fr);gap:4px;margin-top:9px}
+.contrib{height:9px;border-radius:3px;background:#1d3446}.contrib.c1{background:#075b58}.contrib.c2{background:#078c75}.contrib.c3{background:#10b77e}.contrib.c4{background:#24d18d}
+.contribution-caption{text-align:right;font-size:9px;color:#b5cadb;margin:5px 0 0}
+.reference-projects{max-width:1500px;margin:12px auto 0;text-align:center}
+.reference-projects>h2{font:600 23px var(--display);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;gap:24px}
+.reference-projects>h2:before,.reference-projects>h2:after{content:"";width:80px;height:1px;background:#087eaa}
+.reference-project-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.reference-project{height:145px;display:flex;flex-direction:column;justify-content:space-between;text-align:left;padding:15px;border:1px solid #08a9dc;border-radius:18px;overflow:hidden;position:relative;box-shadow:0 0 17px #00b5e92a;background:linear-gradient(135deg,#113d55,#061321)}
+.reference-project:before{content:"";position:absolute;inset:0;opacity:.5;background:radial-gradient(circle at 70% 30%,#18bde7,transparent 40%),repeating-linear-gradient(135deg,transparent 0 15px,#2cb9d222 16px 17px,transparent 18px 32px)}
+.reference-project span,.reference-project b{position:relative;z-index:1}.reference-project span{font-size:9px;letter-spacing:2px;color:#b9e6f6}.reference-project b{font:600 16px/1.25 var(--display);color:#f4fbff}
+.project-mobile:before{background:radial-gradient(ellipse at 50% 30%,#3174a8,transparent 55%),linear-gradient(120deg,#101a47,#0a1726)}
+.project-machine:before{background:radial-gradient(ellipse at 50% 30%,#9aa7a7,transparent 45%),linear-gradient(120deg,#293e47,#071827)}
+.project-data:before{background:radial-gradient(ellipse at 50% 30%,#4157c6,transparent 45%),linear-gradient(120deg,#151d52,#071827)}
+.reference-project:hover{transform:translateY(-4px);box-shadow:0 0 28px #00c5f466}
+.reference-all-projects{display:inline-block;color:#16c5f0;font-size:12px;margin-top:12px}
+@media(max-width:1000px){.reference-top{grid-template-columns:1fr 390px;gap:18px}.tech-icon{width:58px;height:58px}.reference-project-grid{gap:12px}}
+@media(max-width:800px){.hybrid-hero{height:auto;min-height:0;grid-template-columns:1fr;padding:35px 7vw 0}.portrait-stage{height:340px;max-width:450px}.reference-top{grid-template-columns:1fr}.reference-github{max-width:520px;width:100%;margin:0 auto}.tech-icons{grid-template-columns:repeat(4,1fr);row-gap:18px}.reference-project-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.site-header{height:auto;min-height:65px}.hybrid-hero .hero-name{font-size:clamp(60px,15vw,90px)}.hybrid-hero .hero-role{font-size:18px}.portrait-stage{height:300px}.reference-dashboard{padding:22px 15px 30px}.reference-skills h2{font-size:24px}.tech-icon{width:57px;height:57px}.tech-item{font-size:11px}.reference-project-grid{gap:9px}.reference-project{height:125px;padding:11px}.reference-project b{font-size:13px}}
