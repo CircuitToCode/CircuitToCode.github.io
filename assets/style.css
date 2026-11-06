@@ -85,3 +85,40 @@ body{background:#0a1220;color:#eaf1fb}
 .section-heading h2{letter-spacing:-.055em}
 @media(max-width:800px){.hybrid-hero{grid-template-columns:1fr;padding:65px 7vw 55px;gap:20px}.portrait-stage{height:390px}.portrait-frame{height:340px}.portrait-orbit{width:350px;height:350px}}
 @media(max-width:560px){.hybrid-hero .hero-name{font-size:clamp(68px,18vw,100px)}.hybrid-hero .hero-role{font-size:19px}.portrait-stage{height:350px}.portrait-frame{height:310px;width:75%}.portrait-stamp{right:0;font-size:8px}.portrait-orbit{width:310px;height:310px}}
+
+
+/* Approved CircuitToCode portfolio visual system */
+.site-header{max-width:none;padding:0 max(3.5vw,calc((100vw - 1540px)/2));height:82px;background:#f6f8fb;color:#102033;border-bottom:1px solid #dce6ef}
+.brand{color:#102033;font-size:22px}.brand-mark{display:inline-grid;place-items:center;width:38px;height:38px;margin-right:8px;border:2px solid #148fd0;border-radius:10px;color:#087ebd;font-size:25px}
+.nav{color:#29394b;gap:clamp(14px,2.3vw,34px)}.nav a:hover{color:#078ac5}.nav-cta{background:#071a2b;color:#fff!important;border-color:#04bce2;box-shadow:0 0 20px #08b9e933}
+.hybrid-hero{min-height:570px;padding:48px max(5vw,calc((100vw - 1380px)/2)) 45px;grid-template-columns:1fr .95fr;gap:3vw;background:radial-gradient(ellipse at 83% 52%,#c9e8f9 0,transparent 34%),linear-gradient(115deg,#fbfcfd,#edf4fa 65%,#dcecf7)}
+.hybrid-hero:before{content:"";position:absolute;left:0;bottom:0;width:32%;height:55%;opacity:.25;background:repeating-linear-gradient(45deg,transparent 0 22px,#27a7e8 23px 24px,transparent 25px 44px);mask-image:linear-gradient(90deg,#000,transparent)}
+.hybrid-hero .hero-name{font-size:clamp(76px,8.5vw,124px);letter-spacing:-.075em;margin:14px 0 14px}
+.hybrid-hero .hero-role{font-size:clamp(20px,2.1vw,29px);font-weight:700;color:#102033;border-left:7px solid #1678e8;padding-left:17px;line-height:1.2}
+.hero-role #roleRotator{color:#102033}.hybrid-hero .hero-text{font-size:18px;color:#48586b;max-width:520px;line-height:1.55}
+.hybrid-hero .hero-actions{margin-top:24px}.hybrid-hero .button{border-radius:28px;padding:13px 21px}
+.hybrid-hero .button.primary{background:#071a2b;color:#fff;border:1px solid #079ed2;box-shadow:0 7px 22px #078ac52b}
+.hybrid-hero .button.secondary{background:#ffffffa8;border:1px solid #9bb1c4;color:#102033}
+.hybrid-hero .hero-meta{font-size:11px;color:#657486}
+.portrait-stage{height:475px;max-width:610px;margin-left:auto;width:100%}
+.portrait-backdrop{width:78%;height:88%;right:8%;left:auto;background:linear-gradient(140deg,#d9f0ff,#a5d9f2);border-radius:50%;transform:none;box-shadow:0 0 0 1px #70c9ed,0 0 0 18px #75c5e51a}
+.portrait-frame{width:min(82%,430px);height:100%;border:0;border-radius:0;box-shadow:none;background:transparent;overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
+.portrait-photo{height:100%;width:100%;object-fit:cover;object-position:center 22%;mix-blend-mode:multiply;mask-image:linear-gradient(#000 80%,transparent 100%)}
+.portrait-stamp{right:0;top:38%;background:transparent;color:#1686c1;box-shadow:none;transform:rotate(-8deg);font:italic 600 22px var(--display);line-height:1.3}
+.portrait-index{left:8%;bottom:4%;color:#1686c1}
+.portrait-orbit{width:440px;height:440px;border-color:#3aa9dc55}
+.ticker{display:none}
+.skills-section{background:radial-gradient(ellipse at 45% 10%,#0b3150,#061421 62%);border:0;padding-top:54px;padding-bottom:58px;position:relative;overflow:hidden}
+.skills-section:before,.github-section:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.22;background-image:linear-gradient(90deg,transparent 0 8%,#04aee7 8.1% 8.2%,transparent 8.3% 100%),linear-gradient(#08aee522 1px,transparent 1px);background-size:160px 80px}
+.skills-section .section-heading{margin-bottom:20px;text-align:center}.skills-section .eyebrow{color:#b6d5ed}
+.skills-section .section-heading h2{font-size:32px;color:#f1f8ff}.skills-section .section-heading h2 .gradient-text{color:#19b7ec;background:none}
+.skill-visual-grid{grid-template-columns:repeat(4,1fr);gap:12px}
+.skill-visual{grid-template-columns:1fr;justify-items:center;text-align:center;background:transparent;border:0;padding:16px 8px;gap:12px}
+.skill-orbit{width:72px;height:72px;font-size:19px;border-color:#0cb4e7;box-shadow:0 0 18px #03b5e733}
+.skill-visual h3{font-size:15px;color:#fff}.skill-visual p:not(.skill-kicker){color:#9bb2c6}.skill-tags{justify-content:center}.skill-tags span{color:#c8e2f3;border-color:#1a5978}
+.github-section{background:#061421;padding-top:40px;padding-bottom:58px;position:relative}
+.github-section .section-heading{display:none}
+.github-panel{max-width:530px;margin:0 0 0 auto;background:#071b2b;border-color:#11658b;box-shadow:0 0 28px #04aee51b}
+.github-event{padding:10px 0}.github-event-icon{border-color:#0d789d;color:#16c0ec}.github-panel-head a{color:#14bce8}
+@media(max-width:800px){.site-header{padding:0 20px}.hybrid-hero{grid-template-columns:1fr;padding:50px 7vw 25px}.portrait-stage{height:360px;max-width:450px;margin:0 auto}.skill-visual-grid{grid-template-columns:repeat(2,1fr)}.github-panel{margin:20px auto 0}}
+@media(max-width:560px){.nav{gap:12px}.hybrid-hero .hero-name{font-size:clamp(65px,16vw,92px)}.hybrid-hero .hero-role{font-size:18px}.portrait-stage{height:310px}.portrait-stamp{font-size:16px}.skill-visual-grid{grid-template-columns:repeat(2,1fr)}}
