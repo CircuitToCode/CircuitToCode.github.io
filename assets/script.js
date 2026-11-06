@@ -39,3 +39,7 @@ const count=document.getElementById("projectCount");if(count)count.textContent=S
     if(updated)updated.textContent="Live feed requires a connection to GitHub; profile link remains available.";
   }
 })();
+
+
+/* Rotating professional identity */
+(function(){const el=document.getElementById("roleRotator");if(!el)return;const roles=["Embedded Engineer","Industrialization Engineer","Electronics Developer","Automation Enthusiast"];let i=0;setInterval(()=>{el.classList.add("role-out");setTimeout(()=>{i=(i+1)%roles.length;el.textContent=roles[i];el.classList.remove("role-out");},220);},2600);})();
