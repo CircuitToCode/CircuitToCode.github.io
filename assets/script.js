@@ -43,3 +43,13 @@ const count=document.getElementById("projectCount");if(count)count.textContent=S
 
 /* Rotating professional identity */
 (function(){const el=document.getElementById("roleRotator");if(!el)return;const roles=["Embedded Engineer","Industrialization Engineer","Electronics Developer","Automation Enthusiast"];let i=0;setInterval(()=>{el.classList.add("role-out");setTimeout(()=>{i=(i+1)%roles.length;el.textContent=roles[i];el.classList.remove("role-out");},220);},2600);})();
+
+/* Cinematic theme: accessible navigation, reveal effects and scroll progress */
+(function(){
+ const nav=document.querySelector(".cinema-nav"),toggle=document.querySelector(".menu-toggle");
+ if(toggle&&nav){toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open));});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");}));}
+ const bar=document.getElementById("scrollProgress");
+ const update=()=>{if(bar){const max=document.documentElement.scrollHeight-innerHeight;bar.style.width=(max>0?scrollY/max*100:0)+"%";}};
+ addEventListener("scroll",update,{passive:true});update();
+ if("IntersectionObserver" in window){const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target);}}),{threshold:.08});document.querySelectorAll(".cinema .reveal").forEach(el=>io.observe(el));}else{document.querySelectorAll(".cinema .reveal").forEach(el=>el.classList.add("visible"));}
+})();
