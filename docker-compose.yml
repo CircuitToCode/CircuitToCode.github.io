@@ -1,0 +1,20 @@
+services:
+  portfolio-api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: nityanand-portfolio-api
+    env_file:
+      - ./backend/.env
+    environment:
+      DATABASE_URL: sqlite:////data/portfolio.db
+      UPLOAD_DIR: /data/uploads
+      CORS_ORIGINS: https://circuittocode.github.io,http://localhost:5173
+    ports:
+      - "8000:8000"
+    volumes:
+      - portfolio_data:/data
+    restart: unless-stopped
+
+volumes:
+  portfolio_data:
